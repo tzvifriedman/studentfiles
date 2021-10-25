@@ -32,7 +32,7 @@ with open("students.csv") as csvfile:
     for i in replace_dict:
       for p in doc.paragraphs:
         p.text=p.text.replace(i," " + replace_dict[i])
-    doc.save("Graduating Class 2034/" + fullname_path + "/" + fullname_path + ".docx")
+    doc.save(grad_path_folder + "/" + fullname_path + "/" + fullname_path + ".docx")
 
 
 
